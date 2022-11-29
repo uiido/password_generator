@@ -6,6 +6,7 @@ function generatePassword() {
     var special = "#$%&'()*+,-./:;<=>?@[\]^_`{|}~!";
     var numbers = "0123456789";
     var letters = "abcdefghijklmnopqrstuvwxyz";
+    var upLetters = letters.toUpperCase();
     var isUppercase = confirm('Would you like to use uppercase?');
     var isLowercase = confirm('Would you like to use lowercase?');
     var isSpecial = confirm('Would you like to use special characters?');
