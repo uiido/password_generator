@@ -9,6 +9,26 @@ function generatePassword() {
     var isNumber = confirm('Would you like to use numbers?');
 }
 
+if (isUppercase) {
+    // Use Uppercase Letters
+    console.log('uppercase');
+}
+
+if (isLowercase) {
+    // Use Lowercase Letters
+    console.log('lowercase');
+}
+
+if (isSpecial) {
+    // Use Special Characters
+    console.log('special');
+}
+
+if (isNumber) {
+    // Use Numbers
+    console.log('numbers');
+}
+
 // Write password to the #password input
 function writePassword() {
     var password = generatePassword();
