@@ -46,7 +46,7 @@ function generatePassword() {
         finalArray.push(Math.floor(Math.random() * passArray.length));
     }
 
-    return;
+    return finalArray;
 }
 
 // Write password to the #password input
