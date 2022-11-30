@@ -16,34 +16,34 @@ function generatePassword() {
     var isSpecial = confirm('Would you like to use special characters?');
     var isNumber = confirm('Would you like to use numbers?');
     var passArray = [];
-}
 
-// If statements - selects values for each type + adds values to the password currently being generated
-if (characterLength < 8 || characterLength > 128) {
-    alert('Password is too long/short!')
-}
 
-if (isUppercase) {
-    passArray = passArray.concat(upperLetters);
-}
+    // If statements - selects values for each type + adds values to the password currently being generated
+    if (characterLength < 8 || characterLength > 128) {
+        alert('Password is too long/short!')
+    }
 
-if (isLowercase) {
-    passArray = passArray.concat(lowerLetters);
-}
+    if (isUppercase) {
+        passArray = passArray.concat(upperLetters);
+    }
 
-if (isSpecial) {
-    passArray = passArray.concat(special);
-}
+    if (isLowercase) {
+        passArray = passArray.concat(lowerLetters);
+    }
 
-if (isNumber) {
-    passArray = passArray.concat(numbers);
-}
+    if (isSpecial) {
+        passArray = passArray.concat(special);
+    }
 
-// Sets character lengths + randomizes characters
-for (var i = 0; i < characterLength; i++) {
-    console.log(Math.floor(Math.random() * passArray.length));
-}
+    if (isNumber) {
+        passArray = passArray.concat(numbers);
+    }
 
+    // Sets character lengths + randomizes characters
+    for (var i = 0; i < characterLength; i++) {
+        console.log(Math.floor(Math.random() * passArray.length));
+    }
+}
 
 // Write password to the #password input
 function writePassword() {
