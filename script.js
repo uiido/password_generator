@@ -12,11 +12,12 @@ function generatePassword() {
     var isLowercase = confirm('Would you like to use lowercase?');
     var isSpecial = confirm('Would you like to use special characters?');
     var isNumber = confirm('Would you like to use numbers?');
+    var passArray = [];
 }
 
-//if (isUppercase) {
-//
-//}
+if (isUppercase) {
+    passArray = passArray.concat(upperLetters);
+}
 
 //if (isLowercase) {
 //
@@ -31,7 +32,7 @@ function generatePassword() {
 //}
 
 for (var i = 0; i < characterLength; i++) {
-    console.log(Math.floor(Math.random() * characterLength.length));
+    console.log(Math.floor(Math.random() * passArray.length));
 }
 
 
