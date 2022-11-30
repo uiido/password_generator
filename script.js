@@ -43,7 +43,7 @@ function generatePassword() {
 
     // Sets character lengths + randomizes characters
     for (var i = 0; i < characterLength; i++) {
-        finalArray(Math.floor(Math.random() * passArray.length));
+        finalArray.map(Math.floor(Math.random() * passArray.length));
     }
 }
 
