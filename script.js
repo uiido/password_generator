@@ -19,17 +19,17 @@ if (isUppercase) {
     passArray = passArray.concat(upperLetters);
 }
 
-//if (isLowercase) {
-//
-//}
+if (isLowercase) {
+    passArray = passArray.concat(lowerLetters);
+}
 
-//if (isSpecial) {
-//
-//}
+if (isSpecial) {
+    passArray = passArray.concat(special);
+}
 
-//if (isNumber) {
-//
-//}
+if (isNumber) {
+    passArray = passArray.concat(numbers);
+}
 
 for (var i = 0; i < characterLength; i++) {
     console.log(Math.floor(Math.random() * passArray.length));
