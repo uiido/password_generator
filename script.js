@@ -15,12 +15,13 @@ function generatePassword() {
     var passArray = [];
 }
 
-if (isUppercase) {
-    passArray = passArray.concat(upperLetters);
-}
-
+// If statements - selects values for each type
 if (isLowercase) {
     passArray = passArray.concat(lowerLetters);
+}
+
+if (isUppercase) {
+    passArray = passArray.concat(upperLetters);
 }
 
 if (isSpecial) {
@@ -31,6 +32,7 @@ if (isNumber) {
     passArray = passArray.concat(numbers);
 }
 
+// Sets character lengths + randomizes characters
 for (var i = 0; i < characterLength; i++) {
     console.log(Math.floor(Math.random() * passArray.length));
 }
