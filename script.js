@@ -9,12 +9,11 @@ function generatePassword() {
     var lowerLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     var upperLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
     // Prompts for password
-    // Parse converts a string into a number
     var isUppercase = confirm('Would you like to use uppercase?');
     var isLowercase = confirm('Would you like to use lowercase?');
     var isSpecial = confirm('Would you like to use special characters?');
     var isNumber = confirm('Would you like to use numbers?');
-    var characterLength = parseInt(prompt('How many characters would you like your password to be?'));
+    var characterLength = prompt('How many characters would you like your password to be?');
     var passArray = [];
     var finalArray = [];
 
@@ -38,7 +37,6 @@ function generatePassword() {
 
     if (characterLength < 8 || characterLength > 128) {
         alert('Password is too long/short!');
-        return finalArray;
     }
 
     // Sets character lengths + randomizes characters
