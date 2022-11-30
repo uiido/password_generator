@@ -36,6 +36,9 @@ function generatePassword() {
 //
 //}
 
+for (var i = 0; i < characterLength; i++) {
+    //
+}
 
 
 // Write password to the #password input
