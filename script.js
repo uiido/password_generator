@@ -36,18 +36,21 @@ function generatePassword() {
     }
 
     if (characterLength < 8 || characterLength > 128) {
-        alert('Password must be between 8 and 128 characters!');
-    }
+        // Alert to only input a number; keeps length between 8 and 128
+        alert('Password must be a number between 8 and 128 characters!');
+        return //;
+    } else {
+        // moved into to else
+        // Sets character lengths + randomizes characters
+        console.log([...passArray]);
+        for (var i = 0; i < characterLength; i++) {
+            var randIndex = Math.floor(Math.random() * passArray.length);
+            console.log(randIndex);
+            finalArray.push(passArray[randIndex]);
+        }
 
-    // Sets character lengths + randomizes characters
-    console.log([...passArray]);
-    for (var i = 0; i < characterLength; i++) {
-        var randIndex = Math.floor(Math.random() * passArray.length);
-        console.log(randIndex);
-        finalArray.push(passArray[randIndex]);
+        return finalArray.join('');
     }
-
-    return finalArray.join('');
 }
 
 // Write password to the #password input
