@@ -7,31 +7,33 @@ function generatePassword() {
     var numbers = "0123456789";
     var letters = "abcdefghijklmnopqrstuvwxyz";
     var upLetters = letters.toUpperCase();
+    var length = prompt('How many characters would you like your password to be?');
     var isUppercase = confirm('Would you like to use uppercase?');
     var isLowercase = confirm('Would you like to use lowercase?');
     var isSpecial = confirm('Would you like to use special characters?');
     var isNumber = confirm('Would you like to use numbers?');
 }
 
-if (isUppercase) {
-    // Use Uppercase Letters
-    console.log('uppercase');
-}
+//if (isUppercase) {
+//    // Use Uppercase Letters
+//    console.log('uppercase');
+//}
 
-if (isLowercase) {
-    // Use Lowercase Letters
-    console.log('lowercase');
-}
+//if (isLowercase) {
+//    // Use Lowercase Letters
+//    console.log('lowercase');
+//}
 
-if (isSpecial) {
-    // Use Special Characters
-    console.log('special');
-}
+//if (isSpecial) {
+//    // Use Special Characters
+//    console.log('special');
+//}
 
-if (isNumber) {
-    // Use Numbers
-    console.log('numbers');
-}
+//if (isNumber) {
+//    // Use Numbers
+//    console.log('numbers');
+//    alert('Click OK to confirm use of numbers.');
+//}
 
 // Write password to the #password input
 function writePassword() {
