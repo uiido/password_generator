@@ -38,9 +38,8 @@ function generatePassword() {
     if (characterLength < 8 || characterLength > 128) {
         // Alert to only input a number; keeps length between 8 and 128
         alert('Password must be a number between 8 and 128 characters!');
-        generatePassword();
+        return generatePassword();
     } else {
-        // moved into to else
         // Sets character lengths + randomizes characters
         console.log([...passArray]);
         for (var i = 0; i < characterLength; i++) {
