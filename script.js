@@ -36,12 +36,15 @@ function generatePassword() {
     }
 
     if (characterLength < 8 || characterLength > 128) {
-        alert('Password is too long/short!');
+        alert('Password must be between 8 and 128 characters!');
     }
 
     // Sets character lengths + randomizes characters
+    console.log([...passArray]);
     for (var i = 0; i < characterLength; i++) {
-        finalArray.push(Math.floor(Math.random() * passArray.length));
+        var randIndex = Math.floor(Math.random() * passArray.length);
+        console.log(randIndex);
+        finalArray.push(passArray[randIndex]);
     }
 
     return finalArray.join('');
