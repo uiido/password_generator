@@ -16,25 +16,21 @@ function generatePassword() {
 if (isUppercase) {
     // Use Uppercase Letters
     console.log('uppercase');
-    alert('Click OK to confirm use of uppercase letters.');
 }
 
 if (isLowercase) {
     // Use Lowercase Letters
     console.log('lowercase');
-    alert('Click OK to confirm use of lowercase letters.');
 }
 
 if (isSpecial) {
     // Use Special Characters
     console.log('special');
-    alert('Click OK to confirm use of special characters.');
 }
 
 if (isNumber) {
     // Use Numbers
     console.log('numbers');
-    alert('Click OK to confirm use of numbers.');
 }
 
 // Write password to the #password input
