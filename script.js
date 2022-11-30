@@ -45,6 +45,8 @@ function generatePassword() {
     for (var i = 0; i < characterLength; i++) {
         finalArray.push(Math.floor(Math.random() * passArray.length));
     }
+
+    return;
 }
 
 // Write password to the #password input
