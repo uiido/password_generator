@@ -2,7 +2,7 @@
 
 [Link to my project](https://github.com/uiido/password_generator)
 
-[Link to my project page](/)
+[Link to my project page](TBA)
 
 ## Table of Contents
 - [Description](#description)
