@@ -43,7 +43,7 @@ function generatePassword() {
     for (var i = 0; i < characterLength; i++) {
         console.log(Math.floor(Math.random() * passArray.length));
     }
-}
+})
 
 // Write password to the #password input
 function writePassword() {
