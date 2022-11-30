@@ -11,26 +11,34 @@ function generatePassword() {
     var isLowercase = confirm('Would you like to use lowercase?');
     var isSpecial = confirm('Would you like to use special characters?');
     var isNumber = confirm('Would you like to use numbers?');
+    var passwordLength = prompt('How long would you like your password to be?');
+    var specialRandom = Math.floor(Math.random() * special.length);
+    var numbersRandom = Math.floor(Math.random() * numbers.length);
+    var lettersRandom = Math.floor(Math.random() * letters.length);
 }
 
 if (isUppercase) {
     // Use Uppercase Letters
     console.log('uppercase');
+    alert('Click OK to confirm use of uppercase letters.');
 }
 
 if (isLowercase) {
     // Use Lowercase Letters
     console.log('lowercase');
+    alert('Click OK to confirm use of lowercase letters.');
 }
 
 if (isSpecial) {
     // Use Special Characters
     console.log('special');
+    alert('Click OK to confirm use of special characters.');
 }
 
 if (isNumber) {
     // Use Numbers
     console.log('numbers');
+    alert('Click OK to confirm use of numbers.');
 }
 
 // Write password to the #password input
