@@ -14,8 +14,6 @@ function generatePassword() {
     var isNumber = confirm('Would you like to use numbers?');
 }
 
-// console.log(Math.floor(Math.random() * 26));
-
 //if (characterLength) {
 //
 //}
@@ -37,7 +35,7 @@ function generatePassword() {
 //}
 
 for (var i = 0; i < characterLength; i++) {
-    //
+    console.log(Math.floor(Math.random() * 26));
 }
 
 
