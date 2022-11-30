@@ -9,8 +9,8 @@ function generatePassword() {
     var lowerLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     var upperLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
     // Prompts for password
-    var isUppercase = confirm('Would you like to use uppercase?');
-    var isLowercase = confirm('Would you like to use lowercase?');
+    var isUppercase = confirm('Would you like to use uppercase letters?');
+    var isLowercase = confirm('Would you like to use lowercase letters?');
     var isSpecial = confirm('Would you like to use special characters?');
     var isNumber = confirm('Would you like to use numbers?');
     var characterLength = prompt('How many characters would you like your password to be?');
