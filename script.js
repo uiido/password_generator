@@ -10,19 +10,16 @@ function generatePassword() {
     var upperLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
     // Prompts for password
     // Parse converts a string into a number
-    var characterLength = parseInt(prompt('How many characters would you like your password to be?'));
     var isUppercase = confirm('Would you like to use uppercase?');
     var isLowercase = confirm('Would you like to use lowercase?');
     var isSpecial = confirm('Would you like to use special characters?');
     var isNumber = confirm('Would you like to use numbers?');
+    var characterLength = parseInt(prompt('How many characters would you like your password to be?'));
     var passArray = [];
+    var finalArray = [];
 
 
     // If statements - selects values for each type + adds values to the password currently being generated
-    if (characterLength < 8 || characterLength > 128) {
-        alert('Password is too long/short!')
-    }
-
     if (isUppercase) {
         passArray = passArray.concat(upperLetters);
     }
@@ -39,9 +36,14 @@ function generatePassword() {
         passArray = passArray.concat(numbers);
     }
 
+    if (characterLength < 8 || characterLength > 128) {
+        alert('Password is too long/short!');
+        return finalArray;
+    }
+
     // Sets character lengths + randomizes characters
     for (var i = 0; i < characterLength; i++) {
-        console.log(Math.floor(Math.random() * passArray.length));
+        finalArray(Math.floor(Math.random() * passArray.length));
     }
 }
 
