@@ -1,6 +1,6 @@
 # My Application
 
-[Link to my project](/)
+[Link to my project](https://github.com/uiido/password_generator)
 
 [Link to my project page](/)
 
